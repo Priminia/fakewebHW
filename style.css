@@ -275,7 +275,7 @@ body {
     padding: 0px;
     font-size: 20px;
     font-weight: 700;
-    cursor: not-allowed;
+    cursor: pointer;
     width: 72px;
     border: 2px solid rgba(173, 173, 173, 0.3);
     background: transparent url('./simg/arrow.png') no-repeat center;
