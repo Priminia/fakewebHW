@@ -1,0 +1,361 @@
+body {
+    background-image: url('./simg/arcane_dsktp_centerAlignedCrd_BG_2x.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr; 
+    height: 100vh; 
+}
+.headerlogo{
+    padding: 48px 72px 0px;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    grid-row: 1; 
+}
+
+.logo{
+    background-image: url('./simg/authorize_clie-removebg-preview.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 168.67px;
+    height: 64px;
+    fill: rgb(252, 252, 252);
+    padding-right: 32px;
+}
+.main-content {
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    font-size: 100%;
+    font-family: 'MXiangHeHeiTC', sans-serif;
+    box-sizing: border-box;
+    -webkit-box-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 16px;
+    margin: 0px 48px;
+    grid-row: 2;
+}
+.login-container {
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'MXiangHeHeiTC', sans-serif;
+    background: rgb(255, 255, 255);
+    padding: 42px;
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 24px;
+    background-size: cover;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    grid-column: 5 / span 4; 
+}
+.login-header{
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    direction: ltr;
+    box-sizing: border-box;
+    font-family: 'MXiangHeHeiTC', sans-serif;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    text-transform: none;
+    font-size: 10px;
+    margin: 0px;
+    padding-top: 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.login-form{
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'MXiangHeHeiTC', sans-serif;
+    text-align: center;
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+}
+.input-field{
+    -webkit-font-smoothing: antialiased;
+    font: inherit;
+    background: transparent;
+    border: none;
+    box-sizing: border-box;
+    display: block;
+    outline: none;
+    width: 100%;
+    font-weight: 700;
+    font-family: "FF Mark W05", sans-serif;
+    height: 44px;
+    padding: 21px 8px 8px;
+    line-height: 19.2px;
+    font-size: 16px;
+    color: rgb(10, 10, 10);
+}
+.footer-content{
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'MXiangHeHeiTC', sans-serif;
+    margin: 12px 16px 24px; /* Reduced top and bottom margins */
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-right: 72px;
+    margin-left: 72px;
+    text-align: initial;
+    grid-column: 1 / span 8;
+    grid-row: 3;
+}
+
+.social-login{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* Adds space between buttons */
+    padding-top: 20px; /* Adds space above the social buttons */
+    justify-content: center; /* Centers buttons if they don't fill the line */
+    width: 100%; /* Ensure the container takes full width */
+}
+.social-btn-facebook{
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    font: inherit;
+    font-family: 'MXiangHeHeiTC', sans-serif;
+    display: block;
+    padding: 0px 16px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    background: rgb(9, 102, 222) url('./simg/Facebook.png') no-repeat center;
+    color: black;
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    height: 40px; /* Adjusted height */
+    border-radius: 9.6px;
+    padding-left: 32px;
+    width: calc(20% - 12px); /* Adjusted width with more margin */
+    margin-bottom: 8px; /* Add margin to the bottom */
+}
+.social-btn-google{
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    font: inherit;
+    font-family: 'MXiangHeHeiTC', sans-serif;
+    display: block;
+    padding: 0px 16px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    background: rgb(255, 255, 255) url('./simg/Google.png') no-repeat center;
+    color: black;
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    height: 40px; /* Adjusted height */
+    border-radius: 9.6px;
+    padding-left: 32px;
+    width: calc(20% - 12px); /* Adjusted width with more margin */
+    margin-bottom: 8px; /* Add margin to the bottom */
+}
+.social-btn-apple{
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    font: inherit;
+    font-family: 'MXiangHeHeiTC', sans-serif;
+    display: block;
+    padding: 0px 16px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    background: rgb(0, 0, 0) url('./simg/Apple.png') no-repeat  center;
+    color: black;
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    height: 40px; /* Adjusted height */
+    border-radius: 9.6px;
+    padding-left: 32px;
+    width: calc(20% - 12px); /* Adjusted width with more margin */
+    margin-bottom: 8px; /* Add margin to the bottom */
+}
+.social-btn-xbox{
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    font: inherit;
+    font-family: 'MXiangHeHeiTC', sans-serif;
+    display: block;
+    padding: 0px 16px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    background: rgb(7, 105, 7) url('./simg/Xbox.png') no-repeat center;
+    color: black;
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    height: 40px; /* Adjusted height */
+    border-radius: 9.6px;
+    padding-left: 32px;
+     width: calc(20% - 12px); /* Adjusted width with more margin */
+    margin-bottom: 8px; /* Add margin to the bottom */
+}
+.social-btn-playstation{
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    font: inherit;
+    font-family: 'MXiangHeHeiTC', sans-serif;
+    display: block;
+    padding: 0px 16px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    background: rgb(0, 35, 91) url('./simg/PlayStation.png') no-repeat center;
+    color: black;
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    height: 40px; /* Adjusted height */
+    border-radius: 9.6px;
+    padding-left: 32px;
+    width: calc(20% - 12px); /* Adjusted width with more margin */
+    margin-bottom: 8px; /* Add margin to the bottom */
+}
+.remember-me{
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    font-size: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'MXiangHeHeiTC', sans-serif;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    height: 18px;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+}
+.re{
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    font-size: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'MXiangHeHeiTC', sans-serif;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.submit{
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    font-size: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'MXiangHeHeiTC', sans-serif;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 80px 0px 24px;
+    
+}
+.submit-btn{
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    font: inherit;
+    font-family: 'MXiangHeHeiTC', sans-serif;
+    display: block;
+    height: 72px;
+    border-radius: 27px;
+    padding: 0px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: not-allowed;
+    width: 72px;
+    border: 2px solid rgba(173, 173, 173, 0.3);
+    background: transparent url('./simg/arrow.png') no-repeat center;
+    color: rgb(173, 173, 173);
+    border-color: rgba(173, 173, 173, 0.3);
+}
+
+.help{
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    font-size: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'MXiangHeHeiTC', sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    -webkit-box-pack: end;
+    justify-content: end;
+}
+.help2{
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: inherit;
+    font-size: 10.24px;
+    box-sizing: border-box;
+    font-family: 'MXiangHeHeiTC', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.link{
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    white-space: nowrap;
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: inherit;
+    font-size: 10.24px;
+    box-sizing: border-box;
+    font-family: 'MXiangHeHeiTC', sans-serif;
+    text-decoration: none;
+    color: rgba(235, 235, 235, 0.9);
+}
+.linkst{
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    white-space: nowrap;
+    direction: ltr;
+    box-sizing: border-box;
+    font-family: 'MXiangHeHeiTC', sans-serif;
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: inherit;
+    color: rgb(173, 173, 173);
+    font-size: 10.24px;
+    margin: 8px 6px;
+}
+
+@media (max-width: 1500px) {
+    .login-container {
+        grid-column: 4 / span 7; 
+    }
+}
+
+@media (max-width: 900px) {
+    .login-container {
+        grid-column: 3 / span 8; 
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        grid-column: 2 / span 10;
+    }
+}
